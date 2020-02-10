@@ -1,0 +1,119 @@
+
+
+/*.myChucks {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 8px;
+  max-width: auto;
+}*/
+
+
+a, .mybutton {
+  color: #000;
+  border: none;
+  display: inline-block;
+  outline: 0;
+  background-color: #f1f1f1;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.my-bar-item {
+  padding: 8px 16px;
+  float: left;
+  background-color: inherit;
+  color: inherit;
+  width: auto;
+  border: none;
+  outline: none;
+  display: block;
+  border-bottom: 3px solid transparent;
+}
+
+.mynav a:hover {
+  border-bottom: 3px solid;
+  color: #e59500;
+}
+
+.mynav a:active {
+  border-bottom: 3px solid white;
+}
+
+.mybar {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.myblack {
+  color: #840032;
+  background-color: #e5dada;
+}
+
+.myjustify {
+  text-align: justify;
+}
+
+div {
+  display: block;
+}
+
+.bg1 {
+  background: url("./../images/bg1.jpg");
+  height: 700px;
+  opacity: 0.8;
+}
+
+.bg2 {
+  background: url("./../images/bg2.jpg");
+  height: 500px;
+  opacity: 0.8;
+}
+
+.bg3 {
+  background: url("./../images/bg3.jpg");
+  height: 800px;
+}
+
+.bg-default {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mytext {
+  position: top;
+  padding-top: 5%;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+.border {
+  background-color: #e5dada;
+  color: #002642;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.mycols {
+  text-align: center;
+  padding: 20px;
+}
+
+img {
+  height: 80%;
+  width: 65%;
+  border-radius: 50%;
+}
+
+.row-bg {
+  background-color:  #e5dada;
+}
