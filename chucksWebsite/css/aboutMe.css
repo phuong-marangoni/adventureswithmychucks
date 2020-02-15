@@ -1,0 +1,109 @@
+body {
+  background-color: #e5dada;
+  /*grey white*/
+}
+
+.mybutton {
+  color: #000;
+  border: none;
+  display: inline-block;
+  outline: 0;
+  background-color: #f1f1f1;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.my-bar-item {
+  padding: 8px 16px;
+  float: left;
+  background-color: inherit;
+  color: inherit;
+  width: auto;
+  border: none;
+  outline: none;
+  display: block;
+  border-bottom: 3px solid transparent;
+}
+
+.mynav a:hover {
+  border-bottom: 3px solid;
+  color: #e59500;
+  /*yellow*/
+}
+
+.mynav a:active {
+  border-bottom: 3px solid white;
+}
+
+.mybar {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.my-color {
+  color: #840032;/*red pink*/
+  background-color: #e5dada;
+}
+
+div {
+  display: block;
+}
+
+.bg1 {
+  background-color: #e5dada;
+}
+
+.bg-default {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mytext {
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+}
+
+.border {
+  background-color: #e5dada;
+  /*grey white*/
+  color: #002642;
+  /*blue*/
+  padding: 18px;
+  font-size: 25px;
+}
+
+.mycols {
+  text-align: center;
+  padding: 20px;
+}
+
+.row-bg {
+  background-color: #e5dada;
+}
+
+.footer-def {
+  background-color: #e5dada;
+  /*grey white*/
+  color: #002642;
+  /*blue*/
+  text-align: left;
+  padding: 50px;
+}
+
+.footer-info {
+  color: #807A7A;
+  /*font color*/
+}
+
+.body-info {
+  font-family: 'Rosario', sans-serif;
+}

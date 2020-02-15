@@ -1,15 +1,9 @@
+body {
+  background-color: #e5dada;
+  /*grey white*/
+}
 
-
-/*.myChucks {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 8px;
-  max-width: auto;
-}*/
-
-
-a, .mybutton {
+.mybutton {
   color: #000;
   border: none;
   display: inline-block;
@@ -35,6 +29,7 @@ a, .mybutton {
 .mynav a:hover {
   border-bottom: 3px solid;
   color: #e59500;
+  /*yellow*/
 }
 
 .mynav a:active {
@@ -47,13 +42,9 @@ a, .mybutton {
   overflow: hidden;
 }
 
-.myblack {
-  color: #840032;
+.my-color {
+  color: #840032;/*red pink*/
   background-color: #e5dada;
-}
-
-.myjustify {
-  text-align: justify;
 }
 
 div {
@@ -86,21 +77,23 @@ div {
 
 .mytext {
   position: top;
-  padding-top: 5%;
+  padding-top: 8%;
   left: 0;
   top: 50%;
   width: 100%;
   text-align: center;
   color: #000;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
 }
 
 .border {
   background-color: #e5dada;
+  /*grey white*/
   color: #002642;
+  /*blue*/
   padding: 18px;
   font-size: 25px;
-  letter-spacing: 10px;
 }
 
 .mycols {
@@ -109,11 +102,43 @@ div {
 }
 
 img {
-  height: 80%;
-  width: 65%;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
 }
 
 .row-bg {
-  background-color:  #e5dada;
+  background-color: #e5dada;
+}
+
+.footer-def {
+  background-color: #e5dada;
+  /*grey white*/
+  color: #002642;
+  /*blue*/
+  text-align: left;
+  padding: 50px;
+}
+
+.footer-info {
+  color: #807A7A;
+  /*font color*/
+}
+
+.body-info {
+  font-family: 'Rosario', sans-serif;
+}
+
+.more-photos-button {
+  background-color: #840032;
+  border: 1px solid #840032;
+  border-radius: 12px;
+  color: #e5dada;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 5px;
+  cursor: pointer;
 }
