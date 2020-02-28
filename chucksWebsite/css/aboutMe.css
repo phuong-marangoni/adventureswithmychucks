@@ -1,109 +1,176 @@
-body {
-  background-color: #e5dada;
-  /*grey white*/
+*,
+*::before,
+*::after {
+  /* For padding to be done within a width rather than in addition*/
+  box-sizing: border-box;
 }
 
-.mybutton {
-  color: #000;
-  border: none;
-  display: inline-block;
-  outline: 0;
-  background-color: #f1f1f1;
-  padding: 8px 16px;
-  text-align: center;
+:root {
+  --ff-primary: 'Permanent Marker', cursive;
+  --ff-secondary: 'Rosario', sans-serif;
+  --f-reg: 400;
+  --f-bold: 900;
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1rem;
+  --c-light: #fff;
+  --c-dark: #000;
+  --c-yellow: #F9D687;
+  --c-accent: #e59500;
+  --c-footer: #807A7A;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--c-dark);
+  color: var(--c-dark);
+  font-family: var(--ff-secondary);
+  margin: 0;
+  font-size: var(--fs-reg);
+}
+
+img {
+  display: block;
+  /* So images don't stretch to be bigger than actual size*/
+  max-width: 100%;
+}
+
+div.bg {
+  /* so items don't touch edges */
+  padding: 1em 1em;
+}
+
+h1,
+h2,
+h3 {
+  /* reset on headers */
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-family: var(--ff-primary);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-family: var(--ff-primary);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-family: var(--ff-secondary);
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
   text-decoration: none;
 }
 
+.bg {
+  background-color: var(--c-yellow);
+  text-align: center;
+  /* covers entire page */
+  min-height: 100%;
+}
+
+.my-button {
+  font-family: var(--ff-primary);
+  color: var(--c-accent);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
 .my-bar-item {
-  padding: 8px 16px;
-  float: left;
-  background-color: inherit;
-  color: inherit;
-  width: auto;
-  border: none;
-  outline: none;
-  display: block;
-  border-bottom: 3px solid transparent;
+  color: var(--c-accent);
+  padding: 0.5rem;
 }
 
-.mynav a:hover {
-  border-bottom: 3px solid;
-  color: #e59500;
-  /*yellow*/
+.my-nav a:hover {
+  color: var(--c-light);
+  text-decoration: none;
 }
 
-.mynav a:active {
-  border-bottom: 3px solid white;
-}
-
-.mybar {
-  display: inline-block;
-  width: 100%;
+.my-bar {
+  background: var(--c-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
-.my-color {
-  color: #840032;/*red pink*/
-  background-color: #e5dada;
-}
-
-div {
-  display: block;
-}
-
-.bg1 {
-  background-color: #e5dada;
-}
-
-.bg-default {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.mytext {
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 50px;
-}
-
-.border {
-  background-color: #e5dada;
-  /*grey white*/
-  color: #002642;
-  /*blue*/
-  padding: 18px;
-  font-size: 25px;
-}
-
-.mycols {
-  text-align: center;
-  padding: 20px;
-}
-
-.row-bg {
-  background-color: #e5dada;
-}
-
-.footer-def {
-  background-color: #e5dada;
-  /*grey white*/
-  color: #002642;
-  /*blue*/
-  text-align: left;
-  padding: 50px;
-}
-
-.footer-info {
-  color: #807A7A;
-  /*font color*/
+.about {
+  color: var(--c-accent);
+  text-shadow: 0.2rem 0.2rem var(--c-dark);
 }
 
 .body-info {
-  font-family: 'Rosario', sans-serif;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.strong {
+  color: #f00;
+}
+
+.col {
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--c-dark);
+  color: var(--c-accent);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.footer__list {
+  text-align: center;
+  padding: 0;
+}
+
+.footer__item {
+  color: var(--c-footer);
+  text-align: center;
+}
+
+.footer__item--top {
+  margin-top: 2rem;
+}
+
+
+.footer a:hover {
+  color: var(--c-accent);
+}
+.footer-info {
+  color: var(--c-footer);
+}
+
+@media (min-width: 800px) {
+
+  .row {
+    display: flex;
+    text-align: center;
+    /* spreads out the columns evenly */
+    justify-content: space-around;
+  }
+
+  .footer__copyright {
+    font-size: 0.7rem;
+
+  }
 }
