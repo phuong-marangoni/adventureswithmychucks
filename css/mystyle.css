@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+  /* For padding to be done within a width rather than in addition*/
+  box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Permanent Marker', cursive;
+    --ff-secondary: 'Rosario', sans-serif;
+    --f-reg: 400;
+    --f-bold: 900;
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1rem;
+    --c-light: #fff;
+    --c-dark: #000;
+    --c-yellow: #F9D687;
+    --c-accent: #e59500;
+    --c-footer: #807A7A;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--c-dark);
+  color: var(--c-dark);
+  font-family: var(--ff-secondary);
+  margin: 0;
+  font-size: var(--fs-reg);
+}
+
+img {
+  display: block;
+  /* So images don't stretch to be bigger than actual size*/
+  max-width: 100%;
+}
+
+div {
+  /* so items don't touch edges */
+  padding: 1em 1em;
+}
+
+h1,
+h2,
+h3 {
+  /* reset on headers */
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-family: var(--ff-primary);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-family: var(--ff-primary);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-family: var(--ff-secondary);
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg {
+  background-color: var(--c-dark);
+  background: url("./../images/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* covers entire page */
+  min-height: 100%;
+}
+
+.my-button {
+  font-family: var(--ff-primary);
+  color: var(--c-accent);
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0.1em 0.1em var(--c-dark);
+  font-size: 1.5em;
+}
+
+.my-bar-item {
+  color: var(--c-accent);
+}
+
+.my-nav a:hover {
+  color: var(--c-light);
+  text-decoration: none;
+}
+
+.my-bar {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.intro {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h1);
+  text-align: center;
+  color: var(--c-light);
+}
+
+.intro__title {
+  font-size: var(--fs-h1);
+  line-height: 1.3;
+  position: relative;
+  text-shadow: 0.2rem 0.2rem var(--c-dark);
+  animation: intro;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes intro {
+  0% {
+    top: -20rem;
+  }
+
+  100% {
+    top: 0.2em;
+  }
+}
+
+.welcome {
+  color: yellow;
+  color: var(--c-accent);
+}
+
+.col {
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--c-dark);
+  color: var(--c-accent);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.footer__list {
+  text-align: center;
+  padding: 0;
+}
+
+.footer__item {
+  color: var(--c-footer);
+  text-align: center;
+}
+
+.footer a:hover {
+  color: var(--c-accent);
+}
+.footer-info {
+  color: var(--c-footer);
+}
+
+@media (min-width: 800px) {
+  .my-bar-item {
+    position: relative;
+    left: 25%;
+    margin: 1rem;
+  }
+
+  @keyframes intro {
+    0% {
+      top: -20rem;
+    }
+
+    100% {
+      top: 18rem;
+    }
+  }
+
+  .row {
+    display: flex;
+    text-align: center;
+    /* spreads out the columns evenly */
+    justify-content: space-around;
+  }
+
+  .footer__copyright {
+    font-size: 0.7rem;
+  }
+}
