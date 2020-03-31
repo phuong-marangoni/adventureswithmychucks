@@ -19,10 +19,10 @@ function displayPictures() {
     picContainer.querySelector('[data-id-fourth]').innerText = i + 4
 
     // Need to use back ticks for string interpolation
-    picContainer.querySelector('[data-img-first]').src = `../images/Converse${i+1}.jpg`
-    picContainer.querySelector('[data-img-second]').src = `../images/Converse${i+2}.jpg`
-    picContainer.querySelector('[data-img-third]').src = `../images/Converse${i+3}.jpg`
-    picContainer.querySelector('[data-img-fourth]').src = `../images/Converse${i+4}.jpg`
+    picContainer.querySelector('[data-img-first]').src = `../images/converse${i+1}.jpg`
+    picContainer.querySelector('[data-img-second]').src = `../images/converse${i+2}.jpg`
+    picContainer.querySelector('[data-img-third]').src = `../images/converse${i+3}.jpg`
+    picContainer.querySelector('[data-img-fourth]').src = `../images/converse${i+4}.jpg`
 
     // Add to the container for rendering
     pictureContainer.append(picContainer)
